@@ -72,6 +72,7 @@ public class Principal {
         m.setMatricula(3);
         m.setIdade(40);
         m.setCpf("15324845689");
+        m.calcularSalario()
         System.out.println("nome:"+m.getNome());
         System.out.println("idade:"+m.getIdade());
         System.out.println("matricula:"+m.getMatricula());
@@ -102,6 +103,7 @@ public class Principal {
         System.out.println("cpf:"+e.getCpf());
         System.out.println("senha:"+e.getSenha());
         System.out.println("___________________________");
+        
         
     }
     
