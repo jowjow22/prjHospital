@@ -1,5 +1,5 @@
 
-package revisaodeorientacao;
+package model;
 
 public class ProntoSocorro {
     private Hospital matriz;

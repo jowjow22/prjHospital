@@ -1,5 +1,5 @@
 
-package revisaodeorientacao;
+package model;
 
 public class Medico extends Funcionario {
     private String crm;

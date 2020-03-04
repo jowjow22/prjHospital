@@ -1,5 +1,5 @@
 
-package revisaodeorientacao;
+package model;
 
 public class Enfermeiro extends Funcionario {
     private String coren;

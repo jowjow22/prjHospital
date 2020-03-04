@@ -1,5 +1,5 @@
 
-package revisaodeorientacao;
+package model;
 
 import java.util.ArrayList;
 

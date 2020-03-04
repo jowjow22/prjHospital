@@ -1,5 +1,10 @@
 
-package revisaodeorientacao;
+package prjHospital;
+
+import model.Enfermeiro;
+import model.Funcionario;
+import model.Medico;
+import model.Paciente;
 
 public class Principal {
 

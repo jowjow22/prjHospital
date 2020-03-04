@@ -1,5 +1,5 @@
 
-package revisaodeorientacao;
+package model;
 
 public class Funcionario extends Pessoa {
     private int matricula;
