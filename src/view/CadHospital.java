@@ -7,12 +7,12 @@ package view;
 
 /**
  *
- * @author Aluno02
+ * @author Aluno01
  */
-public class CadHospital extends javax.swing.JPanel {
+public class CadHospital extends javax.swing.JFrame {
 
     /**
-     * Creates new form CadHospital
+     * Creates new form CadHospital2
      */
     public CadHospital() {
         initComponents();
@@ -33,6 +33,8 @@ public class CadHospital extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         btnCadHosp = new javax.swing.JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
         jLabel1.setText("Nome:");
 
         NomeHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -51,8 +53,8 @@ public class CadHospital extends javax.swing.JPanel {
 
         btnCadHosp.setText("Cadastrar");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -84,6 +86,8 @@ public class CadHospital extends javax.swing.JPanel {
                 .addComponent(btnCadHosp)
                 .addGap(57, 57, 57))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void NomeHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomeHospitalActionPerformed
@@ -94,6 +98,41 @@ public class CadHospital extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_EnderecoActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(CadHospital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(CadHospital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(CadHospital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(CadHospital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new CadHospital().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Endereco;

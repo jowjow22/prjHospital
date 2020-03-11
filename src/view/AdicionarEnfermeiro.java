@@ -9,7 +9,7 @@ package view;
  *
  * @author Aluno02
  */
-public class AdicionarEnfermeiro extends javax.swing.JPanel {
+public class AdicionarEnfermeiro extends javax.swing.JFrame {
 
     /**
      * Creates new form AdicionarEnfermeiro

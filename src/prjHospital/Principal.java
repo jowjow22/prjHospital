@@ -5,10 +5,15 @@ import model.Enfermeiro;
 import model.Funcionario;
 import model.Medico;
 import model.Paciente;
+import javax.swing.JOptionPane;
+import view.CadFuncionario;
+import view.CadHospital;
+import view.CadPaciente;
 
 public class Principal {
 
     public static void main(String[] args) {
+        /*
         Funcionario f = new Funcionario();
         System.out.println("___________________________");
         System.out.println("funcionarios");
@@ -29,9 +34,9 @@ public class Principal {
         System.out.println("___________________________");
         /***
          * instanciando funcionario 1
-         */
+         
         Funcionario f1 = new Funcionario();
-        
+        /*
         f1.setNome("Gabriela Santos");
         f1.setSenha("1234567ab");
         f1.setRg("09876543");
@@ -48,7 +53,7 @@ public class Principal {
         /**
          instanciando paciente 2
          */
-        
+        /*
         Paciente p = new Paciente();
         System.out.println("___________________________");
         System.out.println("paciente");
@@ -61,7 +66,7 @@ public class Principal {
         p.setSenha("1609312309po");
         /*
         exibindo iténs Paceinte 
-        */
+        *//*
         System.out.println("nome:"+p.getNome());
         System.out.println("idade:"+p.getIdade());
         System.out.println("codigo:"+p.getCodPaciente());
@@ -69,9 +74,9 @@ public class Principal {
         System.out.println("cpf:"+p.getCpf());
         System.out.println("senha:"+p.getSenha());
         System.out.println("___________________________");
-        
+        */
         /***/
-        
+        /*
         Medico m = new Medico();
         System.out.println("___________________________");
         System.out.println("medico");
@@ -87,6 +92,7 @@ public class Principal {
         /*
         Exibindo itens Medico
         */
+        /*
         System.out.println("nome:"+m.getNome());
         System.out.println("idade:"+m.getIdade());
         System.out.println("matricula:"+m.getMatricula());
@@ -97,7 +103,7 @@ public class Principal {
         System.out.println("especialidade:"+m.getEspecialidade());
         System.out.println("___________________________");
         /***/
-        
+        /*
         Enfermeiro e =  new Enfermeiro();
         System.out.println("___________________________");
         System.out.println("enfermeiros");
@@ -118,9 +124,13 @@ public class Principal {
         System.out.println("rg:"+e.getRg());
         System.out.println("cpf:"+e.getCpf());
         System.out.println("senha:"+e.getSenha());
-        System.out.println("___________________________");
+        System.out.println("___________________________");*/
         
+        CadHospital ch = new CadHospital();
+        ch.setVisible(true);
         
+        CadPaciente cp = new CadPaciente();
+        cp.setVisible(true);
     }
     
 }
